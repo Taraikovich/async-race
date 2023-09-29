@@ -1,0 +1,105 @@
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+body {
+    background-color: black;
+    // height: 100vh;
+    overflow-x: hidden;
+    color: white;
+}
+
+button {
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    transition: 0.2s linear;
+    background: #ebd000;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #8ba0c4;
+}
+
+button:disabled:hover {
+    box-shadow: none;
+}
+
+button:hover {
+    box-shadow:
+        0 0 0 2px black,
+        0 0 0 4px #ebd000;
+}
+
+nav {
+    div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+input[type="text"] {
+    height: 21px;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #ebd000;
+    margin: 10px 0 10px 5px;
+}
+
+input[type="color"] {
+    border-radius: 0 10px 10px 0;
+    border: 2px solid #ebd000;
+    cursor: pointer;
+}
+
+main {
+    height: 450px;
+}
+
+.car-name {
+    display: inline-block;
+}
+
+div[id] {
+    border-bottom: 3px dashed white;
+}
+
+.winner-popup {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background: rgba(255, 255, 255, 0.201);
+    border: 3px solid white;
+    padding: 20px;
+}
+
+.car-wrapper {
+    background: no-repeat url("./images/flag.png");
+    background-position: right 20px top;
+    background-size: contain;
+}
+
+table {
+    // width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+table thead {
+    font-weight: bold;
+    padding: 5px;
+    background: #ebd000;
+    color: #000;
+    border: 1px solid black;
+    cursor: pointer;
+}
+table td {
+    border: 1px solid #ebd000;
+    padding: 5px;
+    min-width: 70px;
+}
